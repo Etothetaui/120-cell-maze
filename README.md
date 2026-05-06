@@ -60,4 +60,8 @@ To modify it, edit the HTML file directly and open it in a browser to test.
 
 ## License
 
-This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
+Copyright (c) 2026 Etothetaui.
+
+This project is licensed under the GNU General Public License version 2 (GPLv2). See [`LICENSE`](LICENSE) for details.
+
+In practical terms, people may use, share, modify, and distribute the game, including commercially, but distributed modified versions must also provide source code under the GPLv2 terms.
