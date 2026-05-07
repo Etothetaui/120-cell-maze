@@ -34,6 +34,25 @@ h1 { font-size: 18px; margin: 0 0 3px; letter-spacing: 0.02em; }
 .controls button:nth-child(4) { grid-column: 3; grid-row: 2; }
 button { appearance: none; border: 1px solid rgba(255,255,255,0.18); color: #f0f5ff; background: rgba(255,255,255,0.08); border-radius: 12px; padding: 9px 10px; font-weight: 700; cursor: pointer; }
 button:hover { background: rgba(255,255,255,0.15); }
+
+/* Prevent mobile long-press text selection/callouts on game controls. */
+button,
+.controls,
+.controls button,
+.map-corner-controls,
+.map-corner-controls button,
+.full-map-controls,
+.full-map-controls button,
+#maze,
+#map,
+#fullMap {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.controls button {
+  -webkit-tap-highlight-color: transparent;
+}
 .actions { display: grid; gap: 7px; }
 .help { margin-top: 0; color: rgba(237,243,255,0.58); font-size: 12px; line-height: 1.45; max-height: 11rem; overflow: auto; }
 #toast { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); min-height: 22px; max-width: min(720px, calc(100vw - 380px)); text-align: center; color: #fff7c2; text-shadow: 0 2px 14px rgba(0,0,0,0.7); font-weight: 700; pointer-events: none; }
