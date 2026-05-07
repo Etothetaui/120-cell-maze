@@ -705,8 +705,8 @@ function formatElapsed(totalSeconds) {
 }
 
 function updateSeedDisplay(force = false) {
+  if (!force) return;
   if (!seedInput || activeMazeSeed === null || activeMazeSeed === undefined) return;
-  if (!force && document.activeElement === seedInput) return;
   seedInput.value = String(activeMazeSeed);
 }
 
